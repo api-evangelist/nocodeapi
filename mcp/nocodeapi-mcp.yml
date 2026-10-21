@@ -1,0 +1,7 @@
+generated: '2026-10-21'
+method: derived
+source: "No MCP server discovered on provider site"
+deployment:
+  mode: none
+  auth: unknown
+  verified: derived

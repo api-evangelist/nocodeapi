@@ -1,0 +1,36 @@
+generated: '2026-10-21'
+method: probed
+source: https://nocodeapi.com/privacy-policy/
+signals:
+  data_subject_request:
+    url: https://nocodeapi.com/privacy-policy/
+    evidence:
+      - source: https://nocodeapi.com/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some or all of our service."
+        note: Users can refuse data collection, indicating a data subject request right.
+  subprocessors:
+    url: https://nocodeapi.com/privacy-policy/
+    evidence:
+      - source: https://nocodeapi.com/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "We use a third-party payment processor to process payments made to us. In connection with the processing of such payments, we do not retain any personally identifiable information or any financial information such as credit card numbers. Rather, all such information is provided directly to our third-party processor, Stripe, whose use of your personal information is governed by their privacy policy."
+        note: Stripe is a subprocessors for payment processing.
+  data_retention:
+    url: https://nocodeapi.com/privacy-policy/
+    evidence:
+      - source: https://nocodeapi.com/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "We only retain collected information for as long as necessary to provide your requested service."
+        note: Retention limited to service provision.
+  incident_notification:
+    url: https://nocodeapi.com/privacy-policy/
+    evidence:
+      - source: https://nocodeapi.com/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "We protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification."
+        note: General security measures, no explicit breach notification.

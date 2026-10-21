@@ -1,23 +1,90 @@
 aid: nocodeapi
+
 name: NoCodeAPI Pte. Ltd.
-description: 'NoCodeAPI Pte. Ltd. is a company surfaced via the API Evangelist harvest backlog (source:
-  g2-catalog) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'NoCodeAPI Pte. Ltd. provides a no‑code integration platform that turns popular SaaS services such as Google Sheets, Airtable, Google Analytics, Twitter, and many more into secure, ready‑to‑call API endpoints. Users can create projects, configure authentication once, and call generated endpoints without writing backend code, enabling rapid prototyping, automation, and AI‑driven workflows. The service offers a marketplace of pre‑built connectors, pricing tiers, and a developer portal for documentation and support.'
+
 url: https://raw.githubusercontent.com/api-evangelist/nocodeapi/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Integration
+- No-Code
+- API
+- Automation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/nocodeapi-plans-pricing.yml
+- type: WellKnown
+  url: well-known/nocodeapi-well-known.yml
+- type: Hosts
+  url: hosts/nocodeapi-hosts.yml
+- type: Vendors
+  url: vendors/nocodeapi-vendors.yml
+- type: SDKs
+  url: packages/nocodeapi-packages.yml
+- type: Packages
+  url: packages/nocodeapi-packages.yml
+- type: DomainSecurity
+  url: security/nocodeapi-domain-security.yml
 - type: Website
   url: https://nocodeapi.com/
+
+- type: Documentation
+  url: https://nocodeapi.com/docs/
+- type: DeveloperPortal
+  url: https://nocodeapi.com/
+- type: Pricing
+  url: https://nocodeapi.com/pricing/
+- type: SignUp
+  url: https://app.nocodeapi.com/signup
+- type: Login
+  url: https://app.nocodeapi.com/login
+- type: PrivacyPolicy
+  url: https://nocodeapi.com/privacy-policy
+- type: TermsOfService
+  url: https://nocodeapi.com/terms-of-use-2
+- type: StatusPage
+  url: https://status.nocodeapi.com
+
+apis: []
+
+x-coverage:
+  state: gated
+  reason: partner-login
+  method: derived
+  generated: '2026-10-21'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company serves an API surface but requires credentials before any description of it can be read
+  evidence:
+  - url: https://nocodeapi.com/mcp
+    status: 200
+  - url: https://nocodeapi.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
